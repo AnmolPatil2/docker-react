@@ -2,6 +2,6 @@ sudo :required
 services:
   - docker
 before_instal:
-  - docker build -t anmol4developers/docker-react -f Dockerfile.dev .
+  - docker build -t anmol4developers/docker-react -f Dockerfile .
 script:
   - docker run anmol4developers/docker-react npm rum test  -- -- coverage
